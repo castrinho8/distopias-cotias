@@ -1,6 +1,4 @@
-# Herramientas para mantener tu privacidad en internet.
-
-https://castrinho8.github.io/privacy-tools/public/#/portada
+# Ok, Google, ¿qué opinas de pagar para que una multinacional te espíe en tu casa?
 
 ###### Licencia
 *Creative Commons BY-SA*.
