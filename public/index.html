@@ -5,7 +5,7 @@
    <meta name="viewport" content="width=1024" />
    <meta name="apple-mobile-web-app-capable" content="yes" />
    <meta charset="utf-8" />
-   <meta name="Author" content="Pablo Castro" />
+   <meta name="Author" content="Pablo Castro / Santiago Saavedra" />
    <link href='http://fonts.googleapis.com/css?family=Gabriela|Sintony:700,400' rel='stylesheet' type='text/css'>
 
    <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -174,7 +174,7 @@
         </section>
 
         <section>
-          <h3>Si os <em>meus</em> datos non valen nada...</h3>
+          <h3>Se os <em>meus</em> datos non valen nada...</h3>
           <h3 class="fragment">Pero os de <em>toda unha sociedade</em> valen moitísimo</h3>
         </section>
 
@@ -195,7 +195,11 @@
           </aside>
         </section>
 
-        <section data-background-color="white" data-background="img/logos/logo-just-eat.png" data-background-size="50%">
+        <section data-background-color="white">
+	  <h3>Demo:</h3>
+	    <a style="text-align:center" class="image" href="https://www.just-eat.es" target="_blank">
+	      <img src="img/logos/logo-just-eat.png" />
+	    </a>
         </section>
 
         <section data-background="img/background/cookies.jpg">
@@ -262,7 +266,7 @@
         <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
         
         <section>
-          <h3>¡Hay xente que está pagando por ter acceso a túa intimidade!</h3>
+          <h3>¡Hai xente que está pagando por ter acceso a túa intimidade!</h3>
         </section>
         
         <section>
@@ -390,18 +394,28 @@
           <img style="padding: 0; margin-bottom: 40px;" src="img/logos/trackula.svg" width="40%"/>
           <h4><a href="https://trackula.org/es/page/landing-plugin/" target="_blank">Plugin Firefox</a></h4>
           <h4>Premio AEPD</h4>
-          <h4>es-libre</h4>
+          <h4>es<span style="color:#ff0000">Libre</span></h4>
           <h4>FOSDEM, XGN, AtlanticaConf...</h4>
           <aside class="notes">
           </aside>
         </section>
 
         <section>
-          <h4>"El enemigo conoce el sistema"</h4>
-          <h4><em>Marta Peirano</em></h4>
-          <br/>
-          <h4>"Haz click aqui para matarlos a todos"</h4>
-          <h4><em>Bruce Schneier</em></h4>
+	  <div style="display:flex">
+	    <div style="flex:1">
+	      <a href="https://amzn.to/2oxiiyR">
+		<img src="img/books/cover-enemigosistema.jpg" style="width:50%" />
+		<p>El enemigo conoce el sistema</p>
+		<p><em>Marta Peirano</em></p>
+	      </a>
+	    </div>
+	    <div style="flex:1">
+	      <a href="https://amzn.to/35q9J9B">
+		<img src="img/books/cover-matarlostodos.jpg" style="width:50%" />
+		<p>Haz click aqui para matarlos a todos</p>
+		<p><em>Bruce Schneier</em></p>
+	      </a>
+	    </div>
           <aside class="notes">
           </aside>
         </section>
@@ -423,11 +437,12 @@
         </section>
 
         <section>
-          <h2 style="font-size: 100px">thanks!</h2>
-          <br/>
+          <h2 style="font-size: 100px">Graciñas!</h2>
+          <br style="margin-top:6em" />
           <h5>@ssice <em>| Santiago Saavedra</em></h5>
           <h5>@castrinho18 <em>| Pablo Castro</em></h5>
-          <small>info@trackula.org</small>
+	  <br style="margin-top:2em" />
+          <p>info@trackula.org</p>
         </section>
 
 <!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
@@ -468,34 +483,35 @@
       // Full list of configuration options available here:
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
-         controls: false,
-         progress: true,
-         history: true,
-         center: true,
-         slideNumber: true,
+        controls: false,
+        progress: false,
+        history: true,
+        center: true,
+        slideNumber: true,
 
-         width: 800,
-         height: 600,
-         margin: 0.05,
-         minScale: 0.5,
-         maxScale: 1,
+        width: 800,
+        height: 600,
+        margin: 0.05,
+        minScale: 0.5,
+        maxScale: 1,
 
-         theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-         transition: 'none' || 'default', // default/cube/page/concave/zoom/linear/fade/none
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: 'none' || 'default', // default/cube/page/concave/zoom/linear/fade/none
+	backgroundTransition: 'none',
 
-         // Optional libraries used to extend on reveal.js
-         dependencies: [
-            { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-            { src: 'reveal.js/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-            { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-            { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-            { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-            { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
-            { src: '/socket.io/socket.io.js', async: true },
-            { src: 'notes-server/client.js', async: true },
-            // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
-            // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
-      ]
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '/socket.io/socket.io.js', async: true },
+          { src: 'notes-server/client.js', async: true },
+          // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+          // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+	]
       });
 
    </script>
