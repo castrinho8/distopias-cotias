@@ -1,4 +1,4 @@
-# Ok, Google, ¿qué opinas de pagar para que una multinacional te espíe en tu casa?
+# Ética, Privacidade e Tecnoloxía: retos abertos para os anos vinte
 
 ###### Licencia
 *Creative Commons BY-SA*.
